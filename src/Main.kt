@@ -4,6 +4,8 @@ fun main(args: Array<String>) {
     }
 
     println(Person("Bob", true))
+    val rectangle = Rectangle(41, 43)
+    println(rectangle.isSquare)
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
