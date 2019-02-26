@@ -1,3 +1,9 @@
+package geometry.example
+
+import geometry.Person
+import geometry.shapes.Rectangle
+
+
 fun main(args: Array<String>) {
     if (args.isNotEmpty()) {
         println("Hello, ${args[0]}")
