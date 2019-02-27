@@ -2,6 +2,7 @@ package geometry.example
 
 import geometry.Color
 import geometry.Color.*
+import geometry.Expr
 import geometry.Person
 import geometry.shapes.Rectangle
 import java.lang.Exception
@@ -24,6 +25,9 @@ fun main(args: Array<String>) {
     println(mix(BLUE, YELLOW))
 
     println(mixOptimized(BLUE, YELLOW))
+
+    println(eval(Sum(Sum(Num(1), Num(2)), Num(4))))
+
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -70,3 +74,16 @@ fun mixOptimized(c1: Color, c2: Color): Color =
 
             else -> throw Exception("Dirty color")
         }
+
+fun eval(e: Expr): Int =
+        when (e){
+            is Num -> e.value
+            is Sum -> {
+                eval(e.right) + eval(e.left)
+            }
+            else -> throw IllegalArgumentException("Unknown expression")
+        }
+
+class Num(val value: Int): Expr
+
+class Sum(val left: Expr, val right: Expr): Expr
