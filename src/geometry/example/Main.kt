@@ -4,6 +4,7 @@ import geometry.Color
 import geometry.Color.*
 import geometry.Person
 import geometry.shapes.Rectangle
+import java.lang.Exception
 
 
 fun main(args: Array<String>) {
@@ -19,6 +20,9 @@ fun main(args: Array<String>) {
 
     println(getMnemonic(BLUE))
     println(getWarms(ORANGE))
+
+    println(mix(BLUE, YELLOW))
+    println(mix(RED, INDIGO))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -39,4 +43,12 @@ fun getWarms(color: Color): String =
             RED, ORANGE, YELLOW -> "warm"
             GREEN -> "neutral"
             BLUE, INDIGO, VIOLET -> "cold"
+        }
+
+fun mix(c1: Color, c2: Color): Color =
+        when (setOf(c1, c2)) {
+            setOf(RED, YELLOW) -> ORANGE
+            setOf(YELLOW, BLUE) -> GREEN
+            setOf(BLUE, VIOLET) -> INDIGO
+            else -> throw Exception("Dirty color")
         }
