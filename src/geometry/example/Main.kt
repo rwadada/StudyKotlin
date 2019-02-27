@@ -22,7 +22,8 @@ fun main(args: Array<String>) {
     println(getWarms(ORANGE))
 
     println(mix(BLUE, YELLOW))
-    println(mix(RED, INDIGO))
+
+    println(mixOptimized(BLUE, YELLOW))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -50,5 +51,22 @@ fun mix(c1: Color, c2: Color): Color =
             setOf(RED, YELLOW) -> ORANGE
             setOf(YELLOW, BLUE) -> GREEN
             setOf(BLUE, VIOLET) -> INDIGO
+            else -> throw Exception("Dirty color")
+        }
+
+fun mixOptimized(c1: Color, c2: Color): Color =
+        when {
+            (c1 == RED && c2 == YELLOW) ||
+            (c1 == YELLOW && c2 == RED) ->
+                ORANGE
+
+            (c1 == YELLOW && c2 == BLUE) ||
+            (c1 == BLUE && c2 == YELLOW) ->
+                GREEN
+
+            (c1 == BLUE && c2 == VIOLET) ||
+            (c1 == VIOLET && c2 == BLUE) ->
+                INDIGO
+
             else -> throw Exception("Dirty color")
         }
