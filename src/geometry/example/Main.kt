@@ -42,6 +42,8 @@ fun main(args: Array<String>) {
         println("$letter = $binary")
     }
 
+    println(isLetter('q'))
+    println(isNotDigit('x'))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -116,3 +118,7 @@ fun evalWithLogging(e: Expr): Int =
 class Num(val value: Int): Expr
 
 class Sum(val left: Expr, val right: Expr): Expr
+
+fun isLetter(c: Char) = c in 'a'..'z' || c in 'A'..'Z'
+
+fun isNotDigit(c: Char) = c !in '0'..'9'
