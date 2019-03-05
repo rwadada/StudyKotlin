@@ -44,6 +44,8 @@ fun main(args: Array<String>) {
 
     println(isLetter('q'))
     println(isNotDigit('x'))
+
+    correction()
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -122,3 +124,21 @@ class Sum(val left: Expr, val right: Expr): Expr
 fun isLetter(c: Char) = c in 'a'..'z' || c in 'A'..'Z'
 
 fun isNotDigit(c: Char) = c !in '0'..'9'
+
+fun correction() {
+    val set = hashSetOf(1, 7, 53)
+    val list = arrayListOf(1, 7, 53)
+    val map = hashMapOf(1 to "one", 7 to "seven", 53 to "fifty-three")
+
+    println(set.javaClass)
+    println(list.javaClass)
+    println(map.javaClass)
+
+    val strings = listOf("first", "second", "fourteenth")
+
+    println(strings.last())
+
+    val numbers = setOf(1, 14, 2)
+
+    println(numbers.max())
+}
