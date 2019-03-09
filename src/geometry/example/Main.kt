@@ -50,6 +50,14 @@ fun main(args: Array<String>) {
 
     val list = listOf(1, 2, 3)
     println(joinToString(list, "; ", "(", ")"))
+
+    // 3.2.1 名前付き引数
+    println(joinToString(
+        list,
+        separator = " ",
+        prefix = " ",
+        postfix = "."
+    ))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
