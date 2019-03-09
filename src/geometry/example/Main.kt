@@ -58,6 +58,10 @@ fun main(args: Array<String>) {
         prefix = " ",
         postfix = "."
     ))
+
+    // 3.2.1 デフォルト引数
+    println(joinToString(list))
+    println(joinToString(list, "; "))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -155,11 +159,12 @@ fun correction() {
     println(numbers.max())
 }
 
+// 3.2.1 デフォルト引数
 fun <T> joinToString(
     collection: Collection<T>,
-    separator: String,
-    prefix: String,
-    postfix: String
+    separator: String = ", ",
+    prefix: String = "",
+    postfix: String = ""
 ): String {
     val result = StringBuilder(prefix)
     for ((index, element) in collection.withIndex()) {
