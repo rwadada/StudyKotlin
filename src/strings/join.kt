@@ -1,3 +1,12 @@
+/**
+ * ファイルクラス名の変更
+ *
+ * Kotlinのトップレベル関数を含む、生成されたクラスの名前を変更するには、ファイルに@JvmNameアノテーションを追加します。
+ * ファイルの冒頭、すなわちパッケージ名の前にアノテーションをおいてください。
+ */
+
+@file:JvmName("StringFunctions")
+
 package strings
 
 import java.lang.StringBuilder
