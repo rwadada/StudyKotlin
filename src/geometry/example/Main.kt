@@ -5,6 +5,7 @@ import geometry.Color.*
 import geometry.Expr
 import geometry.Person
 import geometry.shapes.Rectangle
+import strings.joinToString
 import java.lang.Exception
 import java.lang.StringBuilder
 import java.util.*
@@ -157,20 +158,4 @@ fun correction() {
     val numbers = setOf(1, 14, 2)
 
     println(numbers.max())
-}
-
-// 3.2.1 デフォルト引数
-fun <T> joinToString(
-    collection: Collection<T>,
-    separator: String = ", ",
-    prefix: String = "",
-    postfix: String = ""
-): String {
-    val result = StringBuilder(prefix)
-    for ((index, element) in collection.withIndex()) {
-        if (index > 0) result.append(separator)
-        result.append(element)
-    }
-    result.append(postfix)
-    return result.toString()
 }
