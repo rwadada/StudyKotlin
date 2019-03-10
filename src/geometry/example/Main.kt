@@ -6,6 +6,7 @@ import geometry.Expr
 import geometry.Person
 import geometry.shapes.Rectangle
 import strings.joinToString
+import strings.lastChar
 import java.lang.Exception
 import java.lang.StringBuilder
 import java.util.*
@@ -63,6 +64,9 @@ fun main(args: Array<String>) {
     // 3.2.1 デフォルト引数
     println(joinToString(list))
     println(joinToString(list, "; "))
+
+    println("Kotlin".lastChar())
+    println("same as above : " + "Kotlin".get("Kotlin".length - 1))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b

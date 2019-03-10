@@ -26,3 +26,6 @@ fun <T> joinToString(
     result.append(postfix)
     return result.toString()
 }
+
+// 3.3 他人のクラスにメソッドを追加する：拡張関数と拡張プロパティ
+fun String.lastChar(): Char = this.get(this.length - 1)
