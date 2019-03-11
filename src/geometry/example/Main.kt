@@ -6,10 +6,12 @@ import geometry.Expr
 import geometry.Person
 import geometry.shapes.Rectangle
 import strings.joinToString
-import strings.lastChar
 import java.lang.Exception
-import java.lang.StringBuilder
 import java.util.*
+
+// 3.3.1 importと拡張関数
+// asキーワードを使用することでインポートするクラスや関数名を変更できる！
+import strings.lastChar as last
 
 
 fun main(args: Array<String>) {
@@ -65,7 +67,8 @@ fun main(args: Array<String>) {
     println(joinToString(list))
     println(joinToString(list, "; "))
 
-    println("Kotlin".lastChar())
+    // 3.3.1 こんな感じにね
+    println("Kotlin".last())
     println("same as above : " + "Kotlin".get("Kotlin".length - 1))
 }
 
