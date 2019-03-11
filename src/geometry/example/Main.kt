@@ -5,9 +5,12 @@ import geometry.Color.*
 import geometry.Expr
 import geometry.Person
 import geometry.shapes.Rectangle
+import geometry.view.Button
 import strings.joinToString
 import java.lang.Exception
 import java.util.*
+import geometry.view.View
+import geometry.view.showOff
 
 // 3.3.1 importと拡張関数
 // asキーワードを使用することでインポートするクラスや関数名を変更できる！
@@ -72,6 +75,12 @@ fun main(args: Array<String>) {
 
     println(listOf("one", "two", "three").joinToString())
     println(listOf("four", "five", "six").join(" "))
+
+    val view: View = Button()
+    view.click()
+    view.showOff()
+    val button: Button = Button()
+    button.showOff()
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
