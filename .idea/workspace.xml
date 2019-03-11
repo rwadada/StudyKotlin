@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0358b345-a366-49d1-9e27-aa8b2f5c3e19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/StudyKotlin/geometry/example/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudyKotlin/geometry/example/MainKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudyKotlin/geometry/example/Num.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudyKotlin/geometry/example/Num.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/StudyKotlin/geometry/example/Sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/StudyKotlin/geometry/example/Sum.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/geometry/example/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/geometry/example/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/strings/join.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/strings/join.kt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/geometry/example/Main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-309">
-              <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+            <state relative-caret-position="452">
+              <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
               <folding>
                 <element signature="e#26#340#0" expanded="true" />
               </folding>
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/strings/join.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="195">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -152,7 +148,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552311146469" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552311204081" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -336,8 +332,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/strings/join.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="24" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -346,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/geometry/example/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-309">
-          <caret line="49" column="26" lean-forward="true" selection-start-line="49" selection-start-column="26" selection-end-line="49" selection-end-column="26" />
+        <state relative-caret-position="452">
+          <caret line="73" column="52" selection-start-line="73" selection-start-column="52" selection-end-line="73" selection-end-column="52" />
           <folding>
             <element signature="e#26#340#0" expanded="true" />
           </folding>

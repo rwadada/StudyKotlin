@@ -69,6 +69,9 @@ fun main(args: Array<String>) {
     // 3.3.1 こんな感じにね
     println("Kotlin".last())
     println("same as above : " + "Kotlin".get("Kotlin".length - 1))
+
+    println(listOf("one", "two", "three").joinToString())
+    println(listOf("four", "five", "six").join(" "))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
@@ -165,3 +168,9 @@ fun correction() {
 
     println(numbers.max())
 }
+
+fun Collection<String>.join(
+    separator: String = ", ",
+    prefix: String = "{",
+    postfix: String = "}"
+) = joinToString(separator, prefix, postfix)
