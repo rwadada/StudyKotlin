@@ -53,19 +53,18 @@ fun main(args: Array<String>) {
     correction()
 
     val list = listOf(1, 2, 3)
-    println(joinToString(list, "; ", "(", ")"))
+    println(list.joinToString("; ", "(", ")"))
 
     // 3.2.1 名前付き引数
-    println(joinToString(
-        list,
+    println(list.joinToString(
         separator = " ",
         prefix = " ",
         postfix = "."
     ))
 
     // 3.2.1 デフォルト引数
-    println(joinToString(list))
-    println(joinToString(list, "; "))
+    println(list.joinToString())
+    println(list.joinToString(separator =  "; "))
 
     // 3.3.1 こんな感じにね
     println("Kotlin".last())

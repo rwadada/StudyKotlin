@@ -11,15 +11,14 @@ package strings
 
 import java.lang.StringBuilder
 
-// 3.2.3 静的なユーティリティクラスをなくす：トップレベルの関数とプロパティ
-fun <T> joinToString(
-    collection: Collection<T>,
+// 3.3.3 拡張としてのユーティリティ関数
+fun <T> Collection<T>.joinToString(
     separator: String = ", ",
     prefix: String = "",
     postfix: String = ""
 ): String {
     val result = StringBuilder(prefix)
-    for ((index, element) in collection.withIndex()) {
+    for ((index, element) in this.withIndex()) {
         if (index > 0) result.append(separator)
         result.append(element)
     }
