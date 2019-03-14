@@ -26,5 +26,12 @@ fun <T> Collection<T>.joinToString(
     return result.toString()
 }
 
-// 3.3 他人のクラスにメソッドを追加する：拡張関数と拡張プロパティ
-fun String.lastChar(): Char = this.get(this.length - 1)
+// 3.3.5 拡張プロパティ
+val String.lastChar: Char
+    get() = get(length - 1)
+
+var StringBuilder.lastChar: Char
+    get() = get(length - 1)
+    set(value: Char) {
+        this.setCharAt(length - 1, value)
+    }

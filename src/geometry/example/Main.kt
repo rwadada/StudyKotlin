@@ -6,11 +6,12 @@ import geometry.Expr
 import geometry.Person
 import geometry.shapes.Rectangle
 import geometry.view.Button
-import strings.joinToString
+import strings.*
 import java.lang.Exception
 import java.util.*
 import geometry.view.View
 import geometry.view.showOff
+import java.lang.StringBuilder
 
 // 3.3.1 importと拡張関数
 // asキーワードを使用することでインポートするクラスや関数名を変更できる！
@@ -81,6 +82,12 @@ fun main(args: Array<String>) {
     view.showOff()
     val button: Button = Button()
     button.showOff()
+
+    println("Kotlin".last)
+
+    val sb = StringBuilder("Kotlin?")
+    sb.last = '!'
+    println(sb)
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
