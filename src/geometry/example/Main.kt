@@ -88,6 +88,11 @@ fun main(args: Array<String>) {
     val sb = StringBuilder("Kotlin?")
     sb.last = '!'
     println(sb)
+
+    // 3.5.1 文字列の分割
+    // Kotlinの場合Javaと異なり正規表現なのかプレーンテキストなのかを明に宣言することができる。
+    println("12.345-6.A".split("\\.|-".toRegex()))
+    println("12.345-6.A".split(".", "-"))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
