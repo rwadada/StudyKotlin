@@ -80,7 +80,7 @@ fun main(args: Array<String>) {
     val view: View = Button()
     view.click()
     view.showOff()
-    val button: Button = Button()
+    val button = Button()
     button.showOff()
 
     println("Kotlin".last)
@@ -91,8 +91,11 @@ fun main(args: Array<String>) {
 
     // 3.5.1 文字列の分割
     // Kotlinの場合Javaと異なり正規表現なのかプレーンテキストなのかを明に宣言することができる。
-    println("12.345-6.A".split("\\.|-".toRegex()))
+    println("12.345-6.A".split("[.\\-]".toRegex()))
     println("12.345-6.A".split(".", "-"))
+
+    // 3.5.2 正規表現とトリプルクォート文字列
+    pursePath("/Users/yole/kotlin-book/chapter.adoc")
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
