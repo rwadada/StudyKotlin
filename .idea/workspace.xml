@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0358b345-a366-49d1-9e27-aa8b2f5c3e19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/part1Chapter4/open_final_abstractModifierDefaultIsFinal/Animated.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/part1Chapter4/open_final_abstractModifierDefaultIsFinal/RichButton.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/part1Chapter4/VisibilityModifierDefaultIsPublic/TalkativeButton.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,11 +45,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/part1Chapter4/open_final_abstractModifierDefaultIsFinal/RichButton.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="210">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/part1Chapter4/VisibilityModifierDefaultIsPublic/TalkativeButton.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -110,6 +118,7 @@
         <option value="$PROJECT_DIR$/src/part1Chapter4/Main.kt" />
         <option value="$PROJECT_DIR$/src/part1Chapter4/open_final_abstractModifierDefaultIsFinal/RichButton.kt" />
         <option value="$PROJECT_DIR$/src/part1Chapter4/open_final_abstractModifierDefaultIsFinal/Animated.kt" />
+        <option value="$PROJECT_DIR$/src/part1Chapter4/VisibilityModifierDefaultIsPublic/TalkativeButton.kt" />
       </list>
     </option>
   </component>
@@ -149,7 +158,7 @@
               <item name="StudyKotlin" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="part1Chapter4" type="462c0819:PsiDirectoryNode" />
-              <item name="open_final_abstractModifierDefaultIsFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="VisibilityModifierDefaultIsPublic" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -295,14 +304,20 @@
       <option name="project" value="LOCAL" />
       <updated>1554539425760</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="4.1.2 open, final, abstract修飾子：デフォルトはfinal">
+      <created>1554540013252</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1554540013252</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="23" width="1920" height="1057" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19062833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19062833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,7 +333,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946752" weight="0.2" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5005325" side_tool="true" weight="0.26454446" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32953367" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32953367" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49946752" weight="0.3284974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -338,7 +353,8 @@
     <MESSAGE value="3.5.2 正規表現とトリプルクォート文字列" />
     <MESSAGE value="3.6 コードを整理する：ローカル関数と拡張" />
     <MESSAGE value="4.1.1 Kotlinのインターフェイス" />
-    <option name="LAST_COMMIT_MESSAGE" value="4.1.1 Kotlinのインターフェイス" />
+    <MESSAGE value="4.1.2 open, final, abstract修飾子：デフォルトはfinal" />
+    <option name="LAST_COMMIT_MESSAGE" value="4.1.2 open, final, abstract修飾子：デフォルトはfinal" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/out/production/StudyKotlin/Person.class" />
@@ -461,8 +477,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/part1Chapter4/open_final_abstractModifierDefaultIsFinal/RichButton.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="45" />
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/part1Chapter4/VisibilityModifierDefaultIsPublic/TalkativeButton.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="3" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="3" />
         </state>
       </provider>
     </entry>
