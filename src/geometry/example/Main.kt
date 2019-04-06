@@ -96,6 +96,12 @@ fun main(args: Array<String>) {
 
     // 3.5.2 正規表現とトリプルクォート文字列
     pursePath("/Users/yole/kotlin-book/chapter.adoc")
+
+    // 3.5.3 複数行のトリプルクォート文字列
+    val kotlinLogo = """| //
+                       .|//
+                       .|/ \"""
+    println(kotlinLogo.trimMargin("."))
 }
 
 fun max(a: Int, b: Int): Int = if (a > b) a else b
